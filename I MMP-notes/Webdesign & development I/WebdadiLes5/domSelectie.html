@@ -1,0 +1,221 @@
+<!--Vertrek van het bestand DOMselectie.html dat je terug kan vinden op chamilo onder documenten in het zip-bestand c05-startbestanden.zip
+Stel een DOM query op die volgende elementen een groene achtergrondkleur geeft. Gebruik hiervoor verschillende manieren (via het selecteren van een individuele element node of een nodelist en via traversing door de DOM beginnend bij de document node ).
+1. Alle p-elementen
+2. Alle elementen van de a-klasse
+3. Het element met id-waarde ‘list1’
+4. Alle p-elementen van de b-klasse
+5. Alle p-elementen en li-elementen van de b-klasse
+6. Alle li-elementen van de lijst ‘list2’
+7. De 6e paragraaf
+8. De eerste paragraaf na een lijst
+9. Alle paragrafen na de lijst ‘list2’
+10. Alle even li-elementen (het tweede element van de lijst, het vierde, ...)
+11. De 4e tem 7e paragraaf
+12. Alle elementen met een id-attribuut
+13. De a-elementen waarvan het href-attribuut de waarde “index.html” heeft
+14. Alle a-elementen waarvan de href-attribuut de waarde begint met “http”
+Tip: Ben je nog niet vertrouwd met CSS selectoren, neem dan een kijkje op http://www.cheetyr.com/css-selectors (parate kennis!!!)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM selection</title>
+    <link rel="stylesheet" type="text/css" href="css/dom.css">
+</head>
+
+<body>
+<ul id="list1">
+  <li class="a">item 1</li>
+  <li class="a">item 2</li>
+  <li class="b">item 3</li>
+  <li class="b">item 4</li>
+</ul>
+<p class="a">Dit is paragraaf 1.</p>
+<p>Dit is paragraaf 2.</p>
+<p class="b">Dit is paragraaf 3.</p>
+<p>Dit is paragraaf 4.</p>
+<p class="a">Dit is paragraaf 5.</p>
+<p class="b">Dit is paragraaf 6.</p>
+<ul id="list2">
+  <li class="a">item 1</li>
+  <li class="a">item 2</li>
+  <li class="b">item 3</li>
+  <li class="b">item 4
+  	<ul>
+    	<li class="a">item 4-1</li>
+        <li class="b">item 4-2</li>
+        <li class="a">item 4-3</li>
+        <li class="a">item 4-4</li>
+    </ul>
+  </li>
+</ul>
+<p>Dit is paragraaf 7.</p>
+<p>Dit is paragraaf 8.</p>
+<p>Dit is paragraaf 9.</p>
+<div id="nav">
+<a href="">lege link</a>
+<a href="http://www.google.be">google</a>
+<a href="index.html" title="homepagina">homepagina</a>
+</div>
+<div id="divResult"></div>
+<script>
+/********************************************************
+* @author   Daan Meert
+* @created      17/03/2016
+* @modified     17/03/2016
+* @copyright Copyright © 2015-2016 Artevelde University College Ghent * 
+********************************************************/
+    function oefeningEen() {
+    var x = document.querySelectorAll("p");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#0F0";
+       }
+    }
+
+    function oefeningTwee() {
+    var x = document.querySelectorAll(".a");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#0F0";
+       }
+    }
+
+    function oefeningDrie() {
+    var x = document.querySelectorAll("#list1");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#0F0";
+       }
+    }
+
+    function oefeningVier() {
+    var x = document.querySelectorAll("p.b");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.color = "#0FF";
+       }
+    }
+
+    function oefeningVijf() {
+    var x = document.querySelectorAll("p.b, li.b");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.color = "#F00";
+       }
+    }
+
+    function oefeningZes() {
+    var x = document.querySelectorAll("#list2 li");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    }
+
+    function oefeningZeven() {
+    var x = document.querySelectorAll("p:nth-child(7)");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    }
+    
+    function oefeningAcht() {
+    var x = document.querySelectorAll("ul + p");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    }
+
+    function oefeningNegen() {
+    var x = document.querySelectorAll("#list2 ~ p");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    } 
+
+    function oefeningTien() {
+    var x = document.querySelectorAll("li:nth-child(even)");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    } 
+
+    function oefeningElf() {
+    var x = document.querySelectorAll("p:nth-child(n+5):nth-child(-n+9)");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    } 
+
+    function oefeningTwaalf() {
+    var x = document.querySelectorAll("[id]");
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    }
+
+    function oefeningDertien() {
+    var x = document.querySelectorAll('a[href$="http"]');
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    } 
+
+    function oefeningVeertien() {
+    var x = document.querySelectorAll('a[href^="http"]');
+    var i;
+    for (i = 0; i < x.length; i++) {
+       x[i].style.backgroundColor = "#F00";
+       }
+    } 
+    function opgaveZesDaan() {
+      var vraag = window.prompt("Geef de naam van een selector");
+      var x = document.querySelectorAll(vraag);
+      var vraagTwee = window.prompt("Wat moer er daar komen?");
+      for (var i = 0; i < x.length; i++) {
+        x[i].innerHTML = "<" + vraag + " id='nieuwElement' class='geel'>" + vraagTwee + "</" + vraag + ">";
+      }
+    }
+      function opgaveZesMevr() {
+      var element = window.prompt("Geef de naam van de selector", "div");
+      var tekst = window.prompt("Geef de inhoud", "blabla");
+      var nieuweNode = document.createElement(element);
+      var nieuweTesktNode = document.createTextNode(tekst);
+      nieuweNode.appendChild(nieuweTekstNode);
+      
+      nieweNode.setAttribute("id", "nieuwElement");
+      nieuweNode.className = "geel";
+
+      console.log(nieuweNode);
+
+      document.body.appendChild(nieuweNode);
+    }
+
+
+    //oefeningEen();
+    //oefeningTwee();
+    //oefeningDrie();
+    //oefeningVier();
+    //oefeningVijf();
+    //oefeningZes();
+    //oefeningZeven();
+    //oefeningAcht();
+    //oefeningNegen();
+    //oefeningTien();
+    //oefeningElf();
+    //oefeningTwaalf();
+    //oefeningDertien();
+    //oefeningVeertien();
+    //opgaveZesDaan();
+    opgaveZesMevr();
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<head> 
+	<title>getElementsByClassName()</title> 
+	<style>
+		.geel{
+		background-color: yellow;
+		} 
+	</style>
+</head>
+<body>
+	<h2>paragrafen selecteren</h2>
+	<p class="geel">De eerste paragraaf</p> 
+	<p>De tweede paragraaf</p>
+	<ul>
+		<li class="geel">item 1</li> 
+		<li>item 2</li> 
+		<li>item 3</li>
+	</ul>
+	<p class="geel">De derde paragraaf</p>
+	<p>De vierde paragraaf</p>
+	<div id="divResult">Wat is er allemaal geel? </div>
+	<script>
+		function oefeningEen() {
+	    var x = document.querySelectorAll("p");
+	    var i;
+	    for (i = 0; i < x.length; i++) {
+       	 x[i].style.backgroundColor = "#0F0";
+       	 x[i].style.color = "#0A0";
+	   		 }
+		}
+		function oefeningTwee() {
+	    	var e = document.getElementsByClassName("geel");
+	    		for (i = 0; i < e.length; i++) {
+	   			document.getElementById("divResult").innerHTML = e[1];
+	    		}
+		}
+		function oefeningDrie() {
+		    var x = document.querySelectorAll(".geel, li.geel");
+		    var i;
+		    for (i = 0; i < x.length; i++) {
+		        x[i].style.backgroundColor = "red";
+		    }
+		}
+		oefeningEen();
+		oefeningTwee();
+		oefeningDrie();
+	</script>
+</body>

@@ -1,0 +1,16 @@
+.footer {
+	background-color: black;
+	bottom: 0;
+	margin: 10vh auto 0;
+	width: 100vw;
+	padding: 3vh 0;
+}
+.tekst {
+	color: white;
+}
+html,body{
+    height: 100%
+}
+.linksFooter {
+	color: #337ab7;
+}

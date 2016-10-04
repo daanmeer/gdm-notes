@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Wildlife Project</title>
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+</head>
+<body>
+<div id="container">
+  <h1><span>The Wildlife project - for a better world</span><strong>a WWF initiative</strong></h1>
+  <div id="content">
+    <ul id="menu">
+        <li><span>home</span></li>
+        <li><a href="aboutus.htm">who we are</a></li>
+        <li><a href="faqs.htm">questions?</a></li>
+        <li><a href="resources.htm">what do we need</a></li>
+        <li><a href="contactus.htm">want to help?</a></li>
+    </ul>
+    <h2>Welcome to our community <span class="hidden">July 4th, 2009</span></h2>
+    <p>Author: John</p>
+    <div class="fotoblok"> <img src="images/lion.jpg" alt="" title="" />
+        <p> The Wildlife Project cares for injured, orphaned, and sick native wildlife of San Diego County, and releases rehabilitated animals back into their natural habitats.</p>
+      <p> The Wildlife Project  is a 501 nonprofit organization, supported entirely by donations</p>
+    </div>
+    <ul class="longlinks">
+      <li><a href="">We Need Your Help! Donate now</a></li>
+      <li><a href="">Learn more about what to do when finding a wild animal in need</a></li>
+    </ul>
+    <h2>Our projects <span class="hidden">July 12th, 2009</span></h2>
+    <p>Author: Jane</p>
+    <div class="fotoblok"> <img src="images/frog.jpg" alt="" title="" />
+        <p> Don't miss this unforgettable evening to share The Wildlife Project 's mission and the wildlife that we care for, to generate positive awareness of The Wildlife Project 's programs and services, and to generate financial support to allow The Wildlife Project  to continue to serve the region's wildlife. </p>
+      <p>Be sure to join us on this wonderous event</p>
+    </div>
+ <div class="dummy">&#160;</div>
+  </div>
+</div>
+<div id="footer">
+  <ul>
+      <li><span>home</span> |</li>
+      <li><a href="aboutus.htm">about us</a> |</li>
+      <li><a href="faqs.htm">faqs</a> |</li>
+      <li><a href="resources.htm">resources</a> |</li>
+      <li><a href="contactus.htm">contact us</a></li>
+  </ul>
+
+    <img src="images/panda.jpg" id="sponsor" alt="a word from our sponsor" title="a word from our sponsor" />
+    <h4>Pretty panda loves you!</h4>
+  <p>Copyright &copy; Ann Audenaert</p>
+</div>
+
+
+
+<script>
+function oefeningEen() {
+    var x = document.getElementsByClassName("fotoblok");
+    x[0].innerHTML = "Leeuw";
+}
+
+function oefeningTwee() {
+    var x = document.getElementsByClassName("longlinks");
+    x[0].innerHTML = "We Need Your Help. Please, donate now!";
+}
+
+function oefeningDrie() {
+    var x = document.getElementsByClassName("fotoblok");
+    x[1].innerHTML = '<img src="images/tiger.jpg" alt="" title="" />';
+}
+
+function oefeningVier() {
+    var x = document.getElementsByClassName("fotoblok");
+    x[1].innerHTML = '<a href="kikker.html">meer info over bedreigde kikkersoorten</a>';
+}
+
+function oefeningVijf() {
+    var x = document.querySelectorAll('.longlinks li a');
+    x[1].innerHTML = " ";
+}
+
+function oefeningZes() {
+    var x = document.querySelectorAll('#footer p');
+    x[0].innerHTML = "Copyright &copy; Daan Meert ";
+}
+
+function oefeningZeven() {
+    var x = document.querySelectorAll('p + p');
+    x[0].innerHTML = ' ';
+}
+
+//oefeningEen();
+//oefeningTwee();
+//oefeningDrie();
+//oefeningVier();
+//oefeningVijf();
+//oefeningZes();
+//oefeningZeven();
+
+</script>
+    
+</body>
+</html>

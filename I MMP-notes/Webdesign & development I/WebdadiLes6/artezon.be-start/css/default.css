@@ -1,0 +1,106 @@
+html {
+    height: 100%;
+    overflow-y: scroll; /* Scrollbar altijd aanzetten zodat de pagina niet verspringt */
+}
+
+body {
+    min-height: 100%;
+    position: relative;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Titillium Web", Helvetica, Arial, sans-serif;
+    font-weight: 200;
+}
+
+.table.table-order > tbody > tr > *,
+.table.table-order > tfoot > tr > * {
+    vertical-align: middle;
+}
+
+.container {
+    padding-bottom: 10rem;
+}
+
+.product {
+    border-radius: 1rem;
+    border: .5rem solid white;
+    box-sizing: border-box;
+    min-height: 37em;
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    position: relative;
+    background: hsl(120, 30%, 55%);
+}
+
+.product > .price {
+    color: hsla(0, 0%, 100%, 0.7);
+    font-size: 3em;
+}
+
+.product > .btn {
+    bottom: 1.5rem;
+    position: absolute;
+}
+
+/* KLEUREN */
+.blue {
+    background: hsl(210, 100%, 70%);
+}
+.purple {
+    background: hsl(270, 30%, 50%);
+}
+.green {
+    background: hsl(120, 30%, 55%);
+}
+.red {
+    background: hsl(0, 70%, 55%);
+}
+.orange {
+    background: hsl(25, 90%, 55%);
+}
+.yellow {
+    background: hsl(50, 95%, 55%);
+}
+
+#shoppingcart a {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#footer {
+    background-color: #000;
+    bottom: 0;
+    height: 9rem;
+    position: absolute;
+    width: 100%;
+}
+
+#footer > p {
+    color: #FFF;
+    line-height: 9rem;
+    text-align: center;
+}
+
+#footer > nav {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+th label {
+    font-weight: normal;
+}
+
+thead th:not(:first-child) {
+    white-space: nowrap;
+    width: 1px;
+}
+
+.number  {
+    font-family: Consolas, monospace;
+    white-space: nowrap;
+}
+.number[type="number"] {
+    width: 4em;
+}

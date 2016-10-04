@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Artezon.be</title>
+    <!-- Bootstrap -->
+    <link href="components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Eigen CSS-->
+    <link rel="stylesheet" href="css/default.css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-default" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-artezon">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#" title="Start">Artezon.be</a>
+            </div>
+            <div id="navbar-artezon" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Eten &amp; Drinken</a></li>
+                    <li><a href="#">Gadgets</a></li>
+                    <li><a href="#">Kleding</a></li>
+                    <li><a href="#">Speelgoed</a></li>
+                </ul>
+                <p class="navbar-text pull-right"><a href="register.html" class="navbar-link">Registreer</a></p>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" title="Winkelkarretje"><i class="glyphicon glyphicon-shopping-cart"></i> <span class="badge">0</span> <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-shopping-cart"></i> Bestellen</a></li>
+                            <li class="divider"></li>
+                            <li class="dropdown-header">Producten</li>
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-remove"></i> [Product 01]</a></li>
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-remove"></i> [Product 02]</a></li>
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-remove"></i> [Product 03]</a></li>
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-remove"></i> [Product 04]</a></li>
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-remove"></i> [Product 05]</a></li>
+                            <li><a href="#"><i class="pull-right glyphicon glyphicon-remove"></i> [Product 06]</a></li>
+                        </ul>
+                    </li>
+                    <li><span><a href="#" class="navbar-btn btn btn-primary"><i class="glyphicon glyphicon-log-in"></i> Aanmelden</a></span></li>
+                </ul>
+                <form class="navbar-form navbar-right" role="search">
+                    <div class="form-group">
+                        <div class="input-group" style="max-width: 200px">
+                          <input type="text" class="form-control" placeholder="Zoek producten&hellip;">
+                          <span class="input-group-btn">
+                            <button type="submit" class="btn btn-success" title="Zoek"><i class="glyphicon glyphicon-search"></i></button>
+                          </span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </nav>
+        <div class="hidden-xs hidden-lg">
+            <img src="http://lorempixel.com/1920/200/abstract/7" alt="" class="img-responsive">
+        </div>
+    </header>
+
+    <div class="container">
+        <ol class="breadcrumb hidden-sm hidden-xs">
+            <li><a href="#"><i class="glyphicon glyphicon-home"></i></a></li>
+            <li class="active">Startpagina</li>
+        </ol>
+
+        <div class="jumbotron">
+                <h1 id="greetingheader">Welkom [Voornaam] [Naam]!</h1>
+                <p>Deze webwinkel is een demoproject van de afstudeerrichting
+            <abbr title="Multimediaproductie">MMP</abbr> van de opleiding <strong>Bachelor in de Grafische en Digitale Media</strong> aan de Arteveldehogeschool.</p>
+        <p>Dit project wordt onder andere gebruikt voor het aanleren van Bootstrap, JavaScript, jQuery, de basis van PHP en MySQL en geldt niet als voorbeeld van hoe een webwinkel voor productie ontworpen moet worden.</p>
+        </div>
+        <div class="row">
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-euro"></i> 39,99</div>              
+                <img src="images/f034_tetris_stackable_LED_desk_lamp.jpg" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>Tetris Stackable LED Desk Lamp</h1>
+                <p class="pull-left">What a wonderful idea! Tetris piece shaped lamps that you can stack. Of course, you''re going to have to be sure to stack them non-optimally. If you make a straight line, sure, you''ll get points, but then your lamp will disappear!</p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-gbp"></i> 14,99</div>
+                <img src="images/12d7_foolcomputer.jpg" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>Any Fool Can Use a Computer</h1>
+                <p>"Any fool can use a computer. Many do." in white ink on a black, 100% cotton shirt.</p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-usd"></i> 24,99</div>
+                <img src="images/f0ce_soft_kitty_panties.jpg" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>Soft Kitty Panties, 3-Pack</h1>
+                <p>We have some serious Big Bang Theory fans in our audience. You''re all about the Bazingas and the Soft Kitties and the jokes about how engineers are the Oompa Loompas of Science.  </p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-gbp"></i> 19,99</div>
+                <img src="images/1546_direwolf_pup_plush.jpg" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>Game of Thrones Direwolf Pup Plush</h1>
+                <p>The discovery of the direwolves is one of the most touching scenes in A Game of Thrones. Just 25 pages in, you get to see what sort of person Jon Snow is and</p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-euro"></i> 14,99</div>
+                <img src="images/ede3_usb_squirming_tentacle.gif" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>USB Squirming Tentacle</h1>
+                <p>Back in the day, the coolest thing ever was the USB Humping Dog. What did it do? You stuck it in your USB port and it... well, it humped your computer, much like an amorous male dog is wont to do. We''re beyond such juvenile humor </p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-usd"></i> 4,79</div>              
+                <img src="images/f158_chocolate_gaming_dice_set.jpg" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>Chocolate Gaming Dice Set</h1>
+                <p class="pull-left">Ok, we''re just going to come out and say it: eating dice is bad for your face. Not only does it destroy your cavalier smile, but it also really damages the dice. And you don''t want your dice to be angry with you, do you? So, use your dice for dice, and us</p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+            <article class="product col-md-4 clearfix">
+                <div class="price pull-right"><i class="glyphicon glyphicon-gbp"></i> 4,99</div>
+                <img src="images/17f9_nikola_tesla_experimints.jpg" alt="" height="150" width="150" class="img-thumbnail">
+                <h1>Nikola Tesla Experimints</h1>
+                <p>Nikola Tesla was a fascinating person. The internets are all a-flurry now with the figurative war of Tesla vs. Edison, but the truth is much more interesting than just a few graphics. There really was a war between the two, but it</p>
+                <button class="btn btn-default pull-left"><i class="glyphicon glyphicon-plus"></i> In winkelmandje</button>
+            </article>
+        </div>
+    </div>
+    <footer id="footer">
+        <p>Copyright &copy; 2014-2015 <a href="http://artezon.be">Artezon.be</a>, a company of <a href="http://www.arteveldehogeschool.be">Artevelde University College Ghent</a>
+        <a href="https://www.facebook.com/BachelorGrafischeEnDigitaleMedia"><i class="fa fa-facebook-square"></i></a> <a href="https://twitter.com/BachelorGDM"><i class="fa fa-twitter-square"></i></a></p>
+    </footer>
+    <!-- SCRIPTS -->
+    <!--Todo 10: hier heb ik mijn scripts toegevoegd voor jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="components/jquery/jquery-1.11.3.min.js"><\/script>');</script>
+    <script type="text/javascript" src="js/meertDaan.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

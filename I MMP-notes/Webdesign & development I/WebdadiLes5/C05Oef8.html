@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>C05 Oefening 8</title>
+</head>
+<body>
+	<h1>Boodschappenlijst</h1>
+<script>
+	function boodschap() {
+		do {
+		var ingegeven = prompt("Wat wil je kopen?");
+			if (ingegeven == "stop") {
+				break;
+			}
+		    var btn = document.createElement("li");
+		    var t = document.createTextNode(ingegeven);
+		    btn.appendChild(t);
+		    document.body.appendChild(btn);
+		}while (ingegeven !== "stop");
+	}
+	boodschap();
+</script>
+</body>
+</html>

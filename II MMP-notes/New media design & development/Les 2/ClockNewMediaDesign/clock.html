@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title></title>
+	<style type="">
+		* {
+		  margin: 0;
+		  padding: 0;
+		}
+		div {
+		  text-align: center;
+		  border: solid .5vh black;
+		  font-size: 20vh;
+		  width:  80vh;
+		  font-family: "roboto-thin";
+		  margin: 35vh auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="clock"></div>
+	<script type="text/javascript">
+	;(function(){
+		  var clockElement = document.querySelector('.clock');
+		  var date = new Date();
+		  clockElement.innerHTML = date.toString();
+		  
+		  function updateClock(){
+		   var today = new Date();
+		    var h = today.getHours();
+		    var m = today.getMinutes();
+		    var s = today.getSeconds();
+		    if ( s < 10  && m < 10 && h < 10){
+		        clockElement.innerHTML =
+		    0 + h + ":" + 0 + m + ":" + 0 + s; 
+		    }
+		    else if ( s < 10  && m < 10 ) {
+		   clockElement.innerHTML =
+		    h + ":" + 0 + m + ":" + 0 + s;
+		    }
+		    else if ( s < 10) {
+		   clockElement.innerHTML =
+		    h + ":" + m + ":" + 0 + s;
+		    }
+		    else if ( m < 10) {
+		   clockElement.innerHTML =
+		    h + ":" + 0 + m + ":" + s;
+		    }
+		    else if ( h < 10) {
+		   clockElement.innerHTML =
+		    0 + h + ":" + m + ":" + s;
+		    }
+		    else{
+		   clockElement.innerHTML =
+		    h + ":" + m + ":" + s;
+		    }
+		    window.setTimeout(function(){ updateClock(); }, 200);  
+		  }
+		  updateClock();
+		})();
+	</script>
+</body>
+</html>
